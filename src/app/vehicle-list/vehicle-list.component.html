@@ -1,0 +1,165 @@
+<table mat-table class="table table-sm table-hover">
+    <thead>
+        <tr>
+            <th style="text-align:center">No.</th>
+            <th style="text-align:center">Data Set No.</th>
+            <th style="text-align:center" colspan="4">Normal Bus</th>
+            <th style="text-align:center" colspan="4">Normal Bus + Train</th>
+            <th style="text-align:center" colspan="4">Low Floor A/C Bus</th>
+            <th style="text-align:center" colspan="2">Selected Option</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th style="text-align:center">Distance</th>
+            <th style="text-align:center">Cost</th>
+            <th style="text-align:center">Travel Time</th>
+            <th style="text-align:center">Wifi/AC</th>
+            <th style="text-align:center">Distance</th>
+            <th style="text-align:center">Cost</th>
+            <th style="text-align:center">Travel Time</th>
+            <th style="text-align:center">Wifi/AC</th>
+            <th style="text-align:center">Distance</th>
+            <th style="text-align:center">Cost</th>
+            <th style="text-align:center">Travel Time</th>
+            <th style="text-align:center">Wifi/AC</th>
+            <th style="text-align:center">Option 1</th>
+            <th style="text-align:center">Option 2</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let vehicle of vehicleList">
+        <tr>
+            <td style="text-align:center">{{vehicleList.indexOf(vehicle)+1}}</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">{{vehicle.distanceA1}}</td>
+            <td style="text-align:center">{{vehicle.costA1}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeA1}}</td>
+            <td style="text-align:center">{{vehicle.fascilityA1}}</td>
+            <td style="text-align:center">{{vehicle.distanceB1}}</td>
+            <td style="text-align:center">{{vehicle.costB1}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeB1}}</td>
+            <td style="text-align:center">{{vehicle.fascilityB1}}</td>
+            <td style="text-align:center">{{vehicle.distanceC1}}</td>
+            <td style="text-align:center">{{vehicle.costC1}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeC1}}</td>
+            <td style="text-align:center">{{vehicle.fascilityC1}}</td>
+            <td style="text-align:center">{{vehicle.set1option1}}</td>
+            <td style="text-align:center">{{vehicle.set1option2}}</td>
+
+
+            <!--<td>
+                <a class="btn" (click)="onDelete(vehicle.$key)">
+                    <i class="fa fa-trash-o"></i>
+                </a>
+            </td>-->
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align:center">2</td>
+            <td style="text-align:center">{{vehicle.distanceA2}}</td>
+            <td style="text-align:center">{{vehicle.costA2}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeA2}}</td>
+            <td style="text-align:center">{{vehicle.fascilityA2}}</td>
+            <td style="text-align:center">{{vehicle.distanceB2}}</td>
+            <td style="text-align:center">{{vehicle.costB2}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeB2}}</td>
+            <td style="text-align:center">{{vehicle.fascilityB2}}</td>
+            <td style="text-align:center">{{vehicle.distanceC2}}</td>
+            <td style="text-align:center">{{vehicle.costC2}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeC2}}</td>
+            <td style="text-align:center">{{vehicle.fascilityC2}}</td>
+            <td style="text-align:center">{{vehicle.set2option1}}</td>
+            <td style="text-align:center">{{vehicle.set2option2}}</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align:center">3</td>
+            <td style="text-align:center">{{vehicle.distanceA3}}</td>
+            <td style="text-align:center">{{vehicle.costA3}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeA3}}</td>
+            <td style="text-align:center">{{vehicle.fascilityA3}}</td>
+            <td style="text-align:center">{{vehicle.distanceB3}}</td>
+            <td style="text-align:center">{{vehicle.costB3}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeB3}}</td>
+            <td style="text-align:center">{{vehicle.fascilityB3}}</td>
+            <td style="text-align:center">{{vehicle.distanceC3}}</td>
+            <td style="text-align:center">{{vehicle.costC3}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeC3}}</td>
+            <td style="text-align:center">{{vehicle.fascilityC3}}</td>
+            <td style="text-align:center">{{vehicle.set3option1}}</td>
+            <td style="text-align:center">{{vehicle.set3option2}}</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align:center">4</td>
+            <td style="text-align:center">{{vehicle.distanceA4}}</td>
+            <td style="text-align:center">{{vehicle.costA4}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeA4}}</td>
+            <td style="text-align:center">{{vehicle.fascilityA4}}</td>
+            <td style="text-align:center">{{vehicle.distanceB4}}</td>
+            <td style="text-align:center">{{vehicle.costB4}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeB4}}</td>
+            <td style="text-align:center">{{vehicle.fascilityB4}}</td>
+            <td style="text-align:center">{{vehicle.distanceC4}}</td>
+            <td style="text-align:center">{{vehicle.costC4}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeC4}}</td>
+            <td style="text-align:center">{{vehicle.fascilityC4}}</td>
+            <td style="text-align:center">{{vehicle.set4option1}}</td>
+            <td style="text-align:center">{{vehicle.set4option2}}</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align:center">5</td>
+            <td style="text-align:center">{{vehicle.distanceA5}}</td>
+            <td style="text-align:center">{{vehicle.costA5}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeA5}}</td>
+            <td style="text-align:center">{{vehicle.fascilityA5}}</td>
+            <td style="text-align:center">{{vehicle.distanceB5}}</td>
+            <td style="text-align:center">{{vehicle.costB5}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeB5}}</td>
+            <td style="text-align:center">{{vehicle.fascilityB5}}</td>
+            <td style="text-align:center">{{vehicle.distanceC5}}</td>
+            <td style="text-align:center">{{vehicle.costC5}}</td>
+            <td style="text-align:center">{{vehicle.travelTimeC5}}</td>
+            <td style="text-align:center">{{vehicle.fascilityC5}}</td>
+            <td style="text-align:center">{{vehicle.set5option1}}</td>
+            <td style="text-align:center">{{vehicle.set5option2}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<table mat-table class="table table-sm table-hover">
+    <thead>
+        <th style="text-align:center">No.</th>
+        <th style="text-align:center">Birth year</th>
+        <th style="text-align:center">Gender</th>
+        <th style="text-align:center">Occupation</th>
+        <th style="text-align:center">Income Level</th>
+        <th style="text-align:center">Origin</th>
+        <th style="text-align:center">Destination</th>
+        <th style="text-align:center">Travel Time</th>
+        <th style="text-align:center">Transport Modes</th>
+        <th style="text-align:center">Purpose</th>
+        <th style="text-align:center">Cost</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicleList">
+            <td style="text-align:center">{{vehicleList.indexOf(vehicle) + 1}} </td>
+            <td style="text-align:center">{{vehicle.age}}</td>
+            <td style="text-align:center">{{vehicle.gender}}</td>
+            <td style="text-align:center">{{vehicle.occupation}}</td>
+            <td style="text-align:center">{{vehicle.incomeLevel}}</td>
+            <td style="text-align:center">{{vehicle.origin}}</td>
+            <td style="text-align:center">{{vehicle.destination}}</td>
+            <td style="text-align:center">{{vehicle.travelTime}}</td>
+            <td style="text-align:center">{{vehicle.transportModes}}</td>
+            <td style="text-align:center">{{vehicle.purpose}}</td>
+            <td style="text-align:center">{{vehicle.cost}}</td>
+        </tr>
+    </tbody>
+</table>

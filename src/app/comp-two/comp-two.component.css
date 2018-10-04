@@ -1,0 +1,46 @@
+.form-group {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.png-icon {
+    border-color: blue;
+}
+
+.form-control {
+    width: 30%;
+}
+
+.card-content {
+    width: 1024px;
+    display: block;
+    height: 600px;
+    margin: auto;
+}
+
+.container {
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.det {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}

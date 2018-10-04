@@ -1,0 +1,229 @@
+<div class="container">
+    <mat-card class="card-content">
+        <form #vehicleForm6="ngForm">
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+            </div>
+
+            <label class="heading">Set 5</label>
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label>Normal Bus</label></div>
+                </div>
+
+                <div class="column">
+                    <div><label>Normal Bus + Train</label></div>
+                </div>
+                <div class="column">
+                    <div><label>Low Floor A/C Bus</label></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column"><img class="img-thumbnail" src="../../../assets/bus.jpg" style="max-width: 200px; min-width: 200px;"></div>
+                <div class="column"><img class="img-thumbnail" src="../../../assets/train.jpg" style="max-width: 200px; min-width: 200px;"></div>
+                <div class="column"><img class="img-thumbnail" src="../../../assets/lowfloor.jpg" style="max-width: 200px; min-width: 200px;"></div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <label>Distance(km): </label><br>
+                        <label>Cost(Rs): </label><br>
+                        <label>Travel Time(min): </label><br>
+                        <label>Facilities(AC): </label><br>
+                        <label>Choice:</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <label>{{distanceA5}}</label><br>
+                        <label>{{costA5}}</label><br>
+                        <label>{{travelTimeA5}}</label><br>
+                        <label>{{fascilityA5}}</label><br>
+
+                        <div class="form-group">
+                            <mat-form-field>
+                                <mat-select [(value)]="set5option1" required>
+                                    <mat-option value="1">1</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                    <mat-option value="3">3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <label>{{distanceB5}}</label><br>
+                        <label>{{costB5}}</label><br>
+                        <label>{{travelTimeB5}}</label><br>
+                        <label>{{fascilityB5}}</label><br>
+
+                        <div class="form-group">
+                            <mat-form-field>
+                                <mat-select [(value)]="set5option2" required>
+                                    <mat-option value="1">1</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                    <mat-option value="3">3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <label>{{distanceC5}}</label><br>
+                        <label>{{costC5}}</label><br>
+                        <label>{{travelTimeC5}}</label><br>
+                        <label>{{fascilityC5}}</label><br>
+
+                        <div class="form-group">
+                            <mat-form-field>
+                                <mat-select [(value)]="set5option3" required>
+                                    <mat-option value="1">1</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                    <mat-option value="3">3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+                <div class="column">
+                    <div><label></label></div>
+                </div>
+            </div>
+
+            <!--<div class="form-group">
+                    <label>Normal Bus</label><br>
+                    <img class="png-icon" src="../../../assets/bus.jpg" style="max-width: 200px; min-width: 200px;"><br>
+                    <div>
+                        <label>Distance: {{distanceA1}}</label><br>
+                        <label>Cost: {{costA1}}</label><br>
+                        <label>Travel Time: {{travelTimeA1}}</label><br>
+                        <label>Facilities(AC): {{fascilityA1}}</label><br>
+                        <mat-form-field>
+                            <mat-select [(value)]="set1option1">
+                                <mat-option value="Normal Bus">1</mat-option>
+                                <mat-option value="Normal Bus + Train">2</mat-option>
+                                <mat-option value="Low Floor A/C Bus">3</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Normal Bus + Train</label><br>
+                    <img class="png-icon" src="../../../assets/train.jpg" style="max-width: 200px; min-width: 200px;"><br>
+                    <div>
+                        <label>Distance: {{distanceB1}}</label><br>
+                        <label>Cost: {{costB1}}</label><br>
+                        <label>Travel Time: {{travelTimeB1}}</label><br>
+                        <label>Facilities(AC): {{fascilityB1}}</label><br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Low Floor A/C Bus</label><br>
+                    <img class="png-icon" src="../../../assets/lowfloor.jpg" style="max-width: 200px; min-width: 200px;"><br>
+                    <div>
+                        <label>Distance: {{distanceC1}}</label><br>
+                        <label>Cost: {{costC1}}</label><br>
+                        <label>Travel Time: {{travelTimeC1}}</label><br>
+                        <label>Facilities(AC): {{fascilityC1}}</label><br>
+                    </div>
+                </div>-->
+
+
+
+            <!--<div class="form-group">
+                    <label>Which option would you prefer the most from Set 1? </label>
+                    <mat-form-field>
+                        <mat-select [(value)]="set1option1">
+                            <mat-option value="Normal Bus">Normal Bus</mat-option>
+                            <mat-option value="Normal Bus + Train">Normal Bus + Train</mat-option>
+                            <mat-option value="Low Floor A/C Bus">Low Floor A/C Bus</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label>Which option is second best from Set 1? </label>
+                    <mat-form-field>
+                        <mat-select [(value)]="set1option2">
+                            <mat-option value="Normal Bus">Normal Bus</mat-option>
+                            <mat-option value="Normal Bus + Train">Normal Bus + Train</mat-option>
+                            <mat-option value="Low Floor A/C Bus">Low Floor A/C Bus</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>-->
+
+            <div class="form-group">
+                <button mat-raised-button routerLink="/comp1" routerLinkActive="active" class="btn btn-default" type="button" (click)="onSubmit(vehicleForm6)" [disabled]="vehicleForm6.invalid || isImageNull()" required>Next</button>
+            </div>
+
+        </form>
+    </mat-card>
+</div>

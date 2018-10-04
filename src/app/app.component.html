@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class=app-toolbar>
+    <mat-toolbar-row>
+        <button mat-button disabled>
+                        <img class="png-icon" src="../../../assets/bus-icon.png" style="max-width: 36px; min-width: 36px;">
+                    </button>
+        <span>Survey Application</span>
+
+        <span class="example-spacer"></span>
+
+        <button mat-button routerLink="/comp2" routerLinkActive="active">Fill Survey</button>
+        <button mat-button routerLink="/vehicles" routerLinkActive="active">Collected Details</button>
+        <!-- <button mat-button routerLink="/">Home</button> -->
+        <button mat-button routerLink="/about" routerLinkActive="active">About</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="page-container">
+    <router-outlet></router-outlet>
+    <!--<app-comp-one></app-comp-one>-->
+</div>
+
+<!-- <div class="row">
+    <div class="col-md-3">
+        <app-vehicle></app-vehicle>
+    </div>
+    <div class="col-md-5">
+        <app-vehicle-list></app-vehicle-list>
+    </div>
+</div> -->

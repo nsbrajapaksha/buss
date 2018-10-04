@@ -1,0 +1,177 @@
+<div class="container">
+    <mat-card class="card-content">
+        <form #vehicleForm1="ngForm">
+
+            <div class="row">
+                <div class="column">
+                    <div class="form-group">
+                        <label class="heading">Socio-economic Information</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Year of birth: </label>
+                        <input type="number" class="form-control" name="age" [(ngModel)]="age" placeholder="Year of birth" required>
+
+
+                        <!--<mat-form-field>
+                            <mat-select [(value)]="age">
+                                <mat-option value="below 20">below 20</mat-option>
+                                <mat-option value="20-30">20-30</mat-option>
+                                <mat-option value="30-40">30-40</mat-option>
+                                <mat-option value="40-50">40-50</mat-option>
+                                <mat-option value="50-60">50-60</mat-option>
+                                <mat-option value="above 60">above 60</mat-option>
+                            </mat-select>
+                        </mat-form-field>-->
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender: </label>
+                        <mat-form-field>
+                            <mat-select [(value)]="gender">
+                                <mat-option value="male">Male</mat-option>
+                                <mat-option value="female">Female</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Occupation: </label>
+                        <!--<input class="form-control" name="occupation" [(ngModel)]="occupation" placeholder="Occupation" required>-->
+                        <mat-form-field>
+                            <mat-select [(value)]="occupation">
+                                <mat-option value="government">Government</mat-option>
+                                <mat-option value="private">Private</mat-option>
+                                <mat-option value="student">Student</mat-option>
+                                <mat-option value="unemployment">Unemployment</mat-option>
+                                <mat-option value="other">Other</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Income level (Rs): </label>
+                        <mat-form-field>
+                            <mat-select [(value)]="incomeLevel">
+                                <mat-option value="below 10,000">below 10,000</mat-option>
+                                <mat-option value="10,000 - 20,000">10,000 - 20,000</mat-option>
+                                <mat-option value="20,000 - 30,000">20,000 - 30,000</mat-option>
+                                <mat-option value="30,000 - 40,000">30,000 - 40,000</mat-option>
+                                <mat-option value="40,000 - 50,000">40,000 - 50,000</mat-option>
+                                <mat-option value="50,000 - 60,000">50,000 - 60,000</mat-option>
+                                <mat-option value="60,000 - 70,000">60,000 - 70,000</mat-option>
+                                <mat-option value="70,000 - 80,000">70,000 - 80,000</mat-option>
+                                <mat-option value="80,000 - 90,000">80,000 - 90,000</mat-option>
+                                <mat-option value="90,000 - 100,000">90,000 - 10,0000</mat-option>
+                                <mat-option value=">100,000">above 100,000</mat-option>
+                                <mat-option value="no response">No response</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="form-group">
+                        <label class="heading">Current travel behaviour</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Origin:</label>
+                        <input type="text" class="form-control" name="origin" [(ngModel)]="origin" placeholder="Origin" required>
+                        <!--<mat-form-field>
+                            <mat-select [(value)]="origin">
+                                <mat-option value="Moratuwa">Moratuwa</mat-option>
+                                <mat-option value="Katubedda">Katubedda</mat-option>
+                                <mat-option value="Rathmalana">Rathmalana</mat-option>
+                                <mat-option value="Mount Lavinia">Mount Lavinia</mat-option>
+                                <mat-option value="Dehiwala">Dehiwala</mat-option>
+                                <mat-option value="Wellawatta">Wellawatta</mat-option>
+                                <mat-option value="Bambalapitiya">Bambalapitiya</mat-option>
+                                <mat-option value="Kollupitiya">Kollupitiya</mat-option>
+                                <mat-option value="Galle Face">Galle Face</mat-option>
+                                <mat-option value="Pettah">Pettah</mat-option>
+                            </mat-select>
+                        </mat-form-field>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label>Destination:</label>
+                        <input type="text" class="form-control" name="destination" [(ngModel)]="destination" placeholder="Destination" required>
+
+                        <!--<mat-form-field>
+                            <mat-select [(value)]="destination">
+                                <mat-option value="Moratuwa">Moratuwa</mat-option>
+                                <mat-option value="Katubedda">Katubedda</mat-option>
+                                <mat-option value="Rathmalana">Rathmalana</mat-option>
+                                <mat-option value="Mount Lavinia">Mount Lavinia</mat-option>
+                                <mat-option value="Dehiwala">Dehiwala</mat-option>
+                                <mat-option value="Wellawatta">Wellawatta</mat-option>
+                                <mat-option value="Bambalapitiya">Bambalapitiya</mat-option>
+                                <mat-option value="Kollupitiya">Kollupitiya</mat-option>
+                                <mat-option value="Galle Face">Galle Face</mat-option>
+                                <mat-option value="Pettah">Pettah</mat-option>
+                            </mat-select>
+                        </mat-form-field>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label>Travel time (min):</label>
+                        <input type="number" class="form-control" name="travelTime" [(ngModel)]="travelTime" placeholder="Travel time" required>
+                        <!--<mat-form-field>
+                            <mat-select [(value)]="travelTime">
+                                <mat-option value="below 15">below 15</mat-option>
+                                <mat-option value="15-30">15-30</mat-option>
+                                <mat-option value="30-45">30-45</mat-option>
+                                <mat-option value="45-60">45-60</mat-option>
+                                <mat-option value="60-90">60-90</mat-option>
+                                <mat-option value="above 90">above 90</mat-option>
+                            </mat-select>
+                        </mat-form-field>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label>Transport modes:</label>
+
+                        <mat-form-field>
+                            <mat-select [(value)]="transportmodes">
+                                <mat-option value="Bus">Bus</mat-option>
+                                <mat-option value="Train">Train</mat-option>
+                                <mat-option value="Bus + Train">Bus + Train</mat-option>
+                                <mat-option value="Private Vehicle">Private Vehicle</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <label>Purpose of the trip:</label>
+
+                        <mat-form-field>
+                            <mat-select [(value)]="purpose">
+                                <mat-option value="Work">Work</mat-option>
+                                <mat-option value="Home">Home</mat-option>
+                                <mat-option value="Education">Education</mat-option>
+                                <mat-option value="Shopping">Shopping</mat-option>
+                                <mat-option value="Leisure">Leisure</mat-option>
+                                <mat-option value="Business">Business</mat-option>
+                                <mat-option value="Other">Other</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cost (Rs):</label>
+                        <input type="number" class="form-control" name="cost" [(ngModel)]="cost" placeholder="Cost" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <button mat-raised-button routerLink="/comp2" routerLinkActive="active" class="btn btn-default" type="button" (click)="onNext(vehicleForm1)" [disabled]="vehicleForm1.invalid" required>Submit</button>
+            </div>
+
+
+        </form>
+    </mat-card>
+</div>
